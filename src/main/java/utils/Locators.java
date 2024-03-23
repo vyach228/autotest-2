@@ -5,11 +5,12 @@ import org.openqa.selenium.By;
 public interface Locators {
 
     public interface MainPage {
-        By BUTTON = By.xpath("(//span[contains(text(),'Случайная статья')])[1]");
+        By BUTTON = By.xpath("(//span[contains(text(),'Форум')])[1]");
+        By BUTTON2 = By.xpath("(//a[@title='Википедия:Запросы'])[1]");
     }
 
     public interface SearchResultPage {
-        By HEADER_TEXT = By.xpath("(//span[contains(text(),'Статья')])[1]");
+        By HEADER_TEXT = By.xpath("(//span[@class='mw-page-title-main'])[1]");
     }
 
 }
